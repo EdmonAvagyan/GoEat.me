@@ -1,0 +1,56 @@
+//
+//  BarbecueVC.swift
+//  GoEat.me
+//
+//  Created by Edmon Avagyan on 06.02.23.
+//
+
+import UIKit
+
+class FoodTypeVC: UIViewController {
+    
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var image1: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var foodData: [String] = []
+    var foodName = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        dizayn()
+        print(foodData)
+        collectionData()
+    }
+    
+    func dizayn() {
+        view1.layer.cornerRadius = 30
+        label1.textColor = .white
+        label1.text = "093-34-05-58"
+        image2.tintColor = .white
+        label2.text = foodName
+        label2.layer.cornerRadius = 20
+        label2.clipsToBounds = true
+    }
+    
+    func collectionData() {
+//        collectionView.delegate = self
+//        collectionView.dataSource = self
+    }
+
+}
+
+//extension BarbecueVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+////        return foodData.count
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        <#code#>
+//    }
+
+    
+//}

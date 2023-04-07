@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A7D9B13C-C604-4827-90CA-C216D7D33110"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16D5C7E0-0732-4BE7-BBCC-49951530EECB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoEat.me/LoginView/RegisterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "creatUser(email:pass:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "16D5C7E0-0732-4BE7-BBCC-49951530EECB - d3765973da518103"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoEat_me.RegisterVC.creatUser(email: Swift.String, pass: Swift.String) -&gt; ()"
+                  moduleName = "GoEat.me"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edmonavagyan/Desktop/GoEat.me/GoEat.me/GoEat.me/LoginView/RegisterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "16D5C7E0-0732-4BE7-BBCC-49951530EECB - 9f6cc1ae4f91bbd1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GoEat_me.RegisterVC.creatUser(email: Swift.String, pass: Swift.String) -&gt; ()"
+                  moduleName = "GoEat.me"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edmonavagyan/Desktop/GoEat.me/GoEat.me/GoEat.me/LoginView/RegisterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9947768F-ACAA-493B-9066-1632E1636D06"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoEat.me/LoginView/RegisterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "creatUser(email:pass:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9947768F-ACAA-493B-9066-1632E1636D06 - 9f6cc1ae4f91bbd1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GoEat_me.RegisterVC.creatUser(email: Swift.String, pass: Swift.String) -&gt; ()"
+                  moduleName = "GoEat.me"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edmonavagyan/Desktop/GoEat.me/GoEat.me/GoEat.me/LoginView/RegisterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "9947768F-ACAA-493B-9066-1632E1636D06 - 9f6cc1ae4f91bbd1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GoEat_me.RegisterVC.creatUser(email: Swift.String, pass: Swift.String) -&gt; ()"
+                  moduleName = "GoEat.me"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edmonavagyan/Desktop/GoEat.me/GoEat.me/GoEat.me/LoginView/RegisterVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "836948E5-013C-41F1-809A-F3A8AD148710"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoEat.me/BasketView/BasketVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
