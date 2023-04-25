@@ -14,7 +14,6 @@ class TabBarVC: UITabBarController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         UITabBar.appearance().barTintColor = .systemBackground
-//        tabBar.tintColor = .label
         setupVCs()
     }
     
@@ -23,7 +22,7 @@ class TabBarVC: UITabBarController {
         if Firebase.Auth.auth().currentUser == nil {
             viewControllers = [
                 createNavController(for: createMainPage(), title: NSLocalizedString("Home", comment: "Home"), image: UIImage(systemName: "house.fill")!),
-                createNavController(for: createBasketVC(), title: NSLocalizedString("Basket", comment: ""), image: UIImage(systemName: "basket")!),
+                createNavController(for: createBasketVC(), title: NSLocalizedString("Cart", comment: ""), image: UIImage(systemName: "cart.fill")!),
                 createNavController(for: createShoppingVC(), title: NSLocalizedString("Shopping", comment: ""), image: UIImage(systemName: "wallet.pass.fill")!),
                 createNavController(for: createLoginVC(), title: NSLocalizedString("Login", comment: ""), image: UIImage(systemName: "person.fill")!)
             ]
@@ -31,7 +30,7 @@ class TabBarVC: UITabBarController {
         else {
             viewControllers = [
                 createNavController(for: createMainPage(), title: NSLocalizedString("Home", comment: "Home"), image: UIImage(systemName: "house.fill")!),
-                createNavController(for: createBasketVC(), title: NSLocalizedString("Basket", comment: ""), image: UIImage(systemName: "basket")!),
+                createNavController(for: createBasketVC(), title: NSLocalizedString("Cart", comment: ""), image: UIImage(systemName: "cart.fill")!),
                 createNavController(for: createShoppingVC(), title: NSLocalizedString("Shopping", comment: ""), image: UIImage(systemName: "wallet.pass.fill")!),
                 createNavController(for: createAccountVC(), title: NSLocalizedString("Login", comment: ""), image: UIImage(systemName: "person.fill")!)
             ]
@@ -44,7 +43,6 @@ class TabBarVC: UITabBarController {
             navController.tabBarItem.title = title
             navController.tabBarItem.image = image
             navController.navigationBar.prefersLargeTitles = true
-//            rootViewController.navigationItem.title = title
             return navController
         }
     

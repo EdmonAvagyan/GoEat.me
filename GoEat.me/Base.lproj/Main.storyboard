@@ -119,6 +119,7 @@
                         <outlet property="label1" destination="hPS-8K-QAu" id="kII-9P-59c"/>
                         <outlet property="myView" destination="SEf-aj-ASe" id="UaG-eD-0Kl"/>
                         <outlet property="search" destination="hmh-kl-sT3" id="566-Db-eNB"/>
+                        <outlet property="searchController" destination="hmh-kl-sT3" id="mRZ-Fd-Z29"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -191,25 +192,16 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ElZ-Q5-cGY">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AUI-Fh-I43">
-                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ywn-Lv-SxO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Sj5-yf-ILB" firstAttribute="leading" secondItem="Ywn-Lv-SxO" secondAttribute="leading" id="37r-hD-LLJ"/>
+                            <constraint firstItem="Sj5-yf-ILB" firstAttribute="trailing" secondItem="Ywn-Lv-SxO" secondAttribute="trailing" id="43G-M0-BzY"/>
                             <constraint firstItem="Sj5-yf-ILB" firstAttribute="top" secondItem="xVX-g9-jNx" secondAttribute="bottom" constant="8" id="9RC-sj-A5A"/>
                             <constraint firstItem="Ywn-Lv-SxO" firstAttribute="bottom" secondItem="Sj5-yf-ILB" secondAttribute="bottom" id="BfM-F5-BgN"/>
-                            <constraint firstItem="Sj5-yf-ILB" firstAttribute="trailing" secondItem="Ywn-Lv-SxO" secondAttribute="trailing" id="EPx-yA-yHU"/>
                             <constraint firstItem="xVX-g9-jNx" firstAttribute="top" secondItem="QfD-mh-Mvo" secondAttribute="bottom" constant="32" id="Kfu-dx-Kyf"/>
                             <constraint firstItem="QfD-mh-Mvo" firstAttribute="leading" secondItem="Ywn-Lv-SxO" secondAttribute="leading" id="NVO-ns-6WP"/>
                             <constraint firstItem="QfD-mh-Mvo" firstAttribute="trailing" secondItem="Ywn-Lv-SxO" secondAttribute="trailing" id="Rjd-Yo-Fy7"/>
@@ -349,10 +341,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q33-9O-nmu">
+                                <rect key="frame" x="120" y="495" width="153" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZqZ-dw-hzi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ZqZ-dw-hzi" firstAttribute="trailing" secondItem="Q33-9O-nmu" secondAttribute="trailing" constant="120" id="0H5-pu-87P"/>
                             <constraint firstItem="GBX-6g-hKo" firstAttribute="top" secondItem="lwd-Yv-Tdb" secondAttribute="bottom" constant="16" id="0PA-Sq-NH2"/>
                             <constraint firstItem="ZqZ-dw-hzi" firstAttribute="trailing" secondItem="OfC-5j-v5n" secondAttribute="trailing" constant="120" id="3Jy-bP-1jD"/>
                             <constraint firstItem="ZqZ-dw-hzi" firstAttribute="trailing" secondItem="GBX-6g-hKo" secondAttribute="trailing" constant="40" id="4fe-ut-NEG"/>
@@ -366,6 +365,7 @@
                             <constraint firstItem="ZqZ-dw-hzi" firstAttribute="trailing" secondItem="Svl-eA-bGu" secondAttribute="trailing" constant="120" id="Oo9-GR-CJ6"/>
                             <constraint firstItem="ZqZ-dw-hzi" firstAttribute="trailing" secondItem="o6N-7T-5bc" secondAttribute="trailing" constant="120" id="Qds-fR-uay"/>
                             <constraint firstItem="Svl-eA-bGu" firstAttribute="leading" secondItem="ZqZ-dw-hzi" secondAttribute="leading" constant="120" id="Scb-Ql-8cC"/>
+                            <constraint firstItem="Q33-9O-nmu" firstAttribute="top" secondItem="GBX-6g-hKo" secondAttribute="bottom" constant="11" id="Sh3-cx-Wf4"/>
                             <constraint firstItem="o6N-7T-5bc" firstAttribute="leading" secondItem="ZqZ-dw-hzi" secondAttribute="leading" constant="120" id="XSp-Tb-wK0"/>
                             <constraint firstItem="ZqZ-dw-hzi" firstAttribute="trailing" secondItem="R1V-FU-TkK" secondAttribute="trailing" constant="80" id="XyU-4a-wu5"/>
                             <constraint firstItem="R1V-FU-TkK" firstAttribute="leading" secondItem="ZqZ-dw-hzi" secondAttribute="leading" constant="80" id="Yvr-IY-b5g"/>
@@ -374,6 +374,7 @@
                             <constraint firstItem="OfC-5j-v5n" firstAttribute="top" secondItem="R1V-FU-TkK" secondAttribute="bottom" constant="8" id="dIo-Nc-vfR"/>
                             <constraint firstItem="ZqZ-dw-hzi" firstAttribute="trailing" secondItem="lwd-Yv-Tdb" secondAttribute="trailing" constant="40" id="hpG-Rm-OPG"/>
                             <constraint firstItem="qpa-KF-by3" firstAttribute="trailing" secondItem="ZqZ-dw-hzi" secondAttribute="trailing" id="tpJ-qY-Od5"/>
+                            <constraint firstItem="Q33-9O-nmu" firstAttribute="leading" secondItem="ZqZ-dw-hzi" secondAttribute="leading" constant="120" id="uAl-by-mWR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o6b-3Y-uUN"/>
@@ -385,6 +386,7 @@
                         <outlet property="image3" destination="R1V-FU-TkK" id="Is1-MO-xYc"/>
                         <outlet property="label1" destination="B7W-PE-uhh" id="U0r-Xi-Ksg"/>
                         <outlet property="label2" destination="OfC-5j-v5n" id="Vvl-lA-P1X"/>
+                        <outlet property="labelVC4" destination="Q33-9O-nmu" id="fGV-sh-cnw"/>
                         <outlet property="textVC1" destination="lwd-Yv-Tdb" id="epy-b4-oGp"/>
                         <outlet property="textVC2" destination="GBX-6g-hKo" id="J7L-wC-8VQ"/>
                         <outlet property="view1" destination="qpa-KF-by3" id="5dB-IC-eoq"/>
@@ -1052,7 +1054,7 @@
         <!--Shopping-->
         <scene sceneID="8CO-ZY-eRA">
             <objects>
-                <viewController storyboardIdentifier="OpenVOpenBasketVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W6W-V8-lhx" customClass="OpenBasketVC" customModule="GoEat_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OpenBasketVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W6W-V8-lhx" customClass="OpenBasketVC" customModule="GoEat_me" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wOy-lh-Psi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1096,7 +1098,7 @@
                                     <constraint firstItem="7RD-dE-ZIA" firstAttribute="leading" secondItem="iLX-1c-0VE" secondAttribute="trailing" constant="8" id="ydH-Uo-thF"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-ek-xZH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-ek-xZH">
                                 <rect key="frame" x="16" y="174" width="361" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="8bw-Kb-Wp2"/>
@@ -1218,7 +1220,7 @@
                                     <constraint firstItem="75m-xA-7t1" firstAttribute="leading" secondItem="ChQ-ot-MWf" secondAttribute="trailing" constant="8" id="xeE-MX-mCa"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vhL-Z3-beB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vhL-Z3-beB">
                                 <rect key="frame" x="16" y="174" width="361" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="361" id="318-Dx-VQr"/>
@@ -1276,7 +1278,7 @@
             </objects>
             <point key="canvasLocation" x="4637.4045801526718" y="88.732394366197184"/>
         </scene>
-        <!--Shopping-->
+        <!--ZakazVC-->
         <scene sceneID="tbd-ep-78z">
             <objects>
                 <viewController storyboardIdentifier="ZakazVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CUm-fD-Hu3" customClass="ZakazVC" customModule="GoEat_me" customModuleProvider="target" sceneMemberID="viewController">
@@ -1431,7 +1433,7 @@
                             <constraint firstItem="VRF-dS-6Xo" firstAttribute="top" secondItem="MFj-i6-b7z" secondAttribute="bottom" constant="32" id="yab-pT-LsT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shopping" image="wallet.pass.fill" catalog="system" id="xv0-50-Nux"/>
+                    <navigationItem key="navigationItem" id="ddP-7X-ZHI"/>
                     <connections>
                         <outlet property="cancelVC" destination="RPj-rM-j7e" id="g3m-q2-6jH"/>
                         <outlet property="countryTF" destination="Rv3-aQ-vq2" id="xbz-X2-Qje"/>
@@ -1450,7 +1452,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e85-xr-peU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5617.5572519083971" y="-628.16901408450713"/>
+            <point key="canvasLocation" x="5618" y="-628"/>
         </scene>
         <!--Shopping-->
         <scene sceneID="G8F-Im-zTd">
@@ -1472,11 +1474,11 @@
             </objects>
             <point key="canvasLocation" x="2443.5114503816794" y="88.732394366197184"/>
         </scene>
-        <!--Basket-->
+        <!--Cart-->
         <scene sceneID="2L6-0n-R6i">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vvs-g3-3Y3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Basket" image="basket" catalog="system" id="k9E-J1-WZb">
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart.fill" catalog="system" id="k9E-J1-WZb">
                         <color key="badgeColor" red="0.90196073060000004" green="0.41568624970000001" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1520,6 +1522,7 @@
     </scenes>
     <resources>
         <image name="basket" catalog="system" width="128" height="108"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="goeatme" width="1000" height="400"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
@@ -1529,6 +1532,9 @@
         <image name="wallet.pass.fill" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
