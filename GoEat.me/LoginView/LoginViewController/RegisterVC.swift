@@ -60,11 +60,10 @@ class RegisterVC: UIViewController {
     
     func sendAccountVC(email: String) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "AccountVC") as! AccountVC
-            vc.email = email
-            vc.modalTransitionStyle = .coverVertical
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+            let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarVC
+            nextVC.modalTransitionStyle = .coverVertical
+            nextVC.modalPresentationStyle = .fullScreen
+            present(nextVC, animated: true)
         }
     
 }
